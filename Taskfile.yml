@@ -7,3 +7,7 @@ tasks:
       - git add .
       - git commit -m "{{.CLI_ARGS}}"
       - git push
+
+  run:
+    cmds:
+      - go run cmd/url-shortener/main.go
